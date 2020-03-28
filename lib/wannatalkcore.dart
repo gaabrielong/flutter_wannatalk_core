@@ -105,15 +105,15 @@ class Wannatalkcore {
     _sendWannatalkMethod(_kWTLogoutMethod, null, onCompletion: onCompletion);
   }
 
-  static Future<void> presentOrganizationProfile(bool autoOpenChat, {Function(WTResult result) onCompletion}) async {
+  static Future<void> loadOrganizationProfile(bool autoOpenChat, {Function(WTResult result) onCompletion}) async {
     _sendWannatalkMethod(_kWTOrgProfileMethod, <String, dynamic>{_cWTAutoOpenChat: autoOpenChat}, onCompletion: onCompletion);
   }
 
-  static Future<void> presentChats({Function(WTResult result) onCompletion}) async {
+  static Future<void> loadChats({Function(WTResult result) onCompletion}) async {
     _sendWannatalkMethod(_kWTChatListMethod, null, onCompletion: onCompletion);
   }
 
-  static Future<void> presentUsers({Function(WTResult result) onCompletion}) async {
+  static Future<void> loadUsers({Function(WTResult result) onCompletion}) async {
     _sendWannatalkMethod(_kWTUserListMethod, null, onCompletion: onCompletion);
   }
 
