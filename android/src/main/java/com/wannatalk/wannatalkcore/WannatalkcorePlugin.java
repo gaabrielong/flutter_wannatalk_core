@@ -1,7 +1,7 @@
 package com.wannatalk.wannatalkcore;
 
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
 
